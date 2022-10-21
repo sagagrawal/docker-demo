@@ -3,7 +3,7 @@ pipeline{
     
     environment {
         imagename = "sagagrawal/demorepo-sagar05"
-        registryCredential = 'dockerhub'
+        registryCredential = 'dockerhub1'
         dockerImage = ''
     }
     stages{
