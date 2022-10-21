@@ -2,7 +2,7 @@ pipeline{
     agent any
     
     environment {
-        imagename = "sagagrawal/demorepo-sagar04"
+        imagename = "sagagrawal/demorepo-sagar05"
         registryCredential = 'dockerhub'
         dockerImage = ''
     }
@@ -31,7 +31,7 @@ pipeline{
                 }
             }
         }
-        
+
         stage('Remove Unused docker image') {
             steps{
                 sh "docker rmi $imagename:$BUILD_NUMBER"
